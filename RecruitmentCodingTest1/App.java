@@ -1,4 +1,4 @@
-package Polarising;
+package RecruitmentCodingTest1;
 
 public class App {
     private String userName;
@@ -53,8 +53,8 @@ public class App {
 
     public void getGrowth(int[] array) {
         int lastYear = 0;
-        System.out
-                .println("This is the expected consultants growth of the company over the next " + yearsOfExistance + " years:");
+        System.out.println("This is the expected consultants growth of the company over the next " + yearsOfExistance
+                + " years:");
         System.out.println(GREEN + "Year " + RESET + "|" + RED + "Expected Consultants" + RESET);
         for (int i = 0; i < array.length; i++) {
             if (isOdd(array[i])) {
@@ -62,9 +62,9 @@ public class App {
                 lastYear = array[i];
             }
         }
-        System.out.println(YELLOW + "(it only shows the years in wich the number of consultants is odd)" + RESET);
-        System.out.println("After " + yearsOfExistance + " years, the company is expected to have "
-                + lastYear + " consultants");
+        System.out.println(YELLOW + "(it only shows the years in which the number of consultants is odd)" + RESET);
+        System.out.println("After " + yearsOfExistance + " years, the company is expected to have " + lastYear
+                + " consultants");
     }
 
     public int numbOfficeChange(int[] array) {
@@ -78,12 +78,9 @@ public class App {
         return counter;
     }
 
-    //StringColors
+    // StringColors
     String RESET = "\u001B[0m";
     String RED = "\u001B[31m";
     String GREEN = "\u001B[32m";
     String YELLOW = "\u001B[33m";
 }
-
-
-
